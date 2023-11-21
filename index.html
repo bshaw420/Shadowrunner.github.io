@@ -3,52 +3,51 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Shadowrunner 1</title>
+<title>Shadowrunner</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 50%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0.25) 0%, hsla(14deg, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14deg, 100%, 87%, 0) 0%, hsla(14deg, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Shadowrunner 1.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Shadowrunner 1" startnode="2" creator="Twine" creator-version="2.6.1" format="Harlowe" format-version="3.3.4" ifid="4b7ad1ac-10ab-4802-ac1f-7289a9ff72d4" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-icon {
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Shadowrunner.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Shadowrunner" startnode="2" creator="Twine" creator-version="2.6.1" format="Harlowe" format-version="3.3.4" ifid="4b7ad1ac-10ab-4802-ac1f-7289a9ff72d4" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-icon {
 	display: none;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">function sendChat() {
-  // Get the player's message
-  const message = document.getElementById("chat-input").value;
-  
-  // Send the message to the ChatGPT API
-  fetch(`https://api.openai.com/v1/engine/davinci-codex/completions`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Authorization": `Bearer ${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}`
-    },
-    body: JSON.stringify({
-      prompt: `You: ${message}\nAI:`,
-      max_tokens: 100,
-      temperature: 0.5
-    })
-  })
-  .then(response => response.json())
-  .then(data => {
-    // Display the response from the ChatGPT API
-    const aiResponse = data.choices[0].text.trim();
-    const passage = `AI: ${aiResponse}\n[[Chat|Continue chatting]]`;
-    setup.display(passage);
-  })
-  .catch(error => {
-    console.error(error);
-  });
+
+:: StoryStylesheet [stylesheet]
+#inventory-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    gap: 10px; /* Adjusts space between grid items */
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
 }
-</script><tw-passagedata pid="1" name="Station Delta" tags="" position="350,50" size="100,100">Station Delta is a bustling spaceport located in a remote sector of the galaxy. It is a popular hub for spacefarers and smugglers alike, drawn to its convenient location near a major hyperspace route and its reputation for being a haven for those looking to avoid the prying eyes of the Galactic Council.
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Station Delta" tags="" position="350,50" size="100,100">
+
+Station Delta is a bustling spaceport located in a remote sector of the galaxy. It is a popular hub for spacefarers and smugglers alike, drawn to its convenient location near a major hyperspace route and its reputation for being a haven for those looking to avoid the prying eyes of the Galactic Council.
 
 The station itself is a sprawling complex of interconnected modules, with a central hub that serves as a marketplace and meeting place for those seeking work, supplies, or information. The hub is surrounded by a variety of shops and vendors, offering everything from high-tech weapons and equipment to exotic food and drink from across the galaxy.
 
 Despite its rough-and-tumble reputation, Station Delta is relatively well-organized, with a system of informal rules and regulations that help keep the peace among its various inhabitants. This includes a network of contacts and informants who keep tabs on the comings and goings of the station&#39;s visitors, as well as a small security force that helps keep troublemakers in check.
 
+&lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/StationDelta.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
+
+
 For Raven, Station Delta is a crucial waypoint on her journeys through space. She comes here to take on new contracts, refuel her ship the ShadowRunner, and stock up on supplies and information. She has a number of trusted contacts on the station, including a fixer who helps her find work and a weapons dealer who provides her with the latest gear and technology.
 
 Despite the risks and uncertainties of life on Station Delta, Raven feels at home here. The station may be a den of thieves and smugglers, but it&#39;s also a place where she can be herself and make a living doing what she loves. And as long as she can stay one step ahead of the law and her enemies, she&#39;ll keep coming back to Station Delta for years to come.
+
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 [[Examine the Job Offers-&gt;Job Offers]]
 [[Check the Ship&#39;s Systems-&gt;Ship Systems]]
@@ -63,9 +62,13 @@ Despite the risks and uncertainties of life on Station Delta, Raven feels at hom
 
 (set:$inventory to (a:))
 
-Currently, you have: &lt;b style=&quot;color:yellow;&quot;&gt;Fuel=$Fuel&lt;/b&gt;, &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt;, &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
-&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt;
-&lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 Meet Raven,  a charismatic and cunning deep space smuggler. Born on a rough-and-tumble space station, Raven learned how to survive and thrive in the cutthroat world of interstellar smuggling. 
 
@@ -75,104 +78,205 @@ She is always on the lookout for her next big score, and her adventurous spirit 
 
 
 [[Visit the Station Delta-&gt;Station Delta]]
-</tw-passagedata><tw-passagedata pid="3" name="Job Offers" tags="" position="200,225" size="100,100">:: PassageReady [script]
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Job Offers" tags="" position="200,225" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Job Offers
+
 Various job offers are posted on the intergalactic network. Some are legal, some not so much. Each job lists the reward and potential risks.
+
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 [[Accept a Smuggling Job-&gt;Smuggling Job]]
 [[Return to Ship Systems-&gt;Ship Systems]]
 [[Return to the Shadowrunner-&gt;The Shadowrunner]]
-</tw-passagedata><tw-passagedata pid="4" name="Ship Systems" tags="" position="425,250" size="100,100">:: PassageReady [script]
+</tw-passagedata><tw-passagedata pid="4" name="Ship Systems" tags="" position="425,250" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Ship Systems
+
 You take a moment to review the Shadowrunner&#39;s systems. Everything seems in order, but extra fuel or upgrades could always come in handy.
+
+&lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/ShipStatus.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 [[Buy Fuel-&gt;Fuel Depot]]
 [[Upgrade Weapons-&gt;Weapons Dealer]]
-[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="950,75" size="100,100">:: PassageReady [script]
+[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="950,75" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Local Tavern
+&lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/LocalTavern.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+
 The tavern is bustling with activity. You overhear whispers of a lucrative, but dangerous, smuggling opportunity.
 
 [[Enjoy a Drink-&gt;Enjoy a Drink]]
 [[Return to Ship Systems-&gt;Ship Systems]]
 [[Return to the Shadowrunner-&gt;The Shadowrunner]]
-[[Check Inventory-&gt;Inventory]]</tw-passagedata><tw-passagedata pid="6" name="Smuggling Job" tags="" position="50,550" size="100,100">:: PassageReady [script]
+[[Take Artifact-&gt;Take Artifact]] </tw-passagedata><tw-passagedata pid="6" name="Smuggling Job" tags="" position="50,550" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Smuggling Job
+
 You&#39;ve accepted a job to smuggle rare artifacts from the desolate planet of Exarion. The job pays 5000 Gold upon delivery. However, the route is known to be patrolled by Galactic Enforcers.
+
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 [[Plan the Route-&gt;Plan Route]]
 [[Gather Supplies-&gt;Gather Supplies]]
 
-</tw-passagedata><tw-passagedata pid="7" name="Fuel Depot" tags="" position="350,700" size="100,100">:: PassageReady [script]
+</tw-passagedata><tw-passagedata pid="7" name="Fuel Depot" tags="" position="350,700" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Buy Fuel
-You decide to buy some extra fuel. It costs 100 Gold.
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+
+You decide to buy some extra fuel. It costs &lt;b style=&quot;color:yellow;&quot;&gt;100 Gold.
 (set: $Fuel to $Fuel + 100)
 (set: $Gold to $Gold - 100)
 
 [[Return to Ship Systems-&gt;Ship Systems]]
 
-</tw-passagedata><tw-passagedata pid="8" name="Weapons Dealer" tags="" position="400,550" size="100,100">:: PassageReady [script]
+</tw-passagedata><tw-passagedata pid="8" name="Weapons Dealer" tags="" position="400,550" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Upgrade Weapons
-You decide to upgrade your weapons. It costs 500 Gold.
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+
+You decide to upgrade your weapons. It costs &lt;b style=&quot;color:yellow;&quot;&gt;500 Gold.
 (set: $Phaser to $Phaser + 500)
 (set: $Gold to $Gold - 500)
 
-[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="700,275" size="100,100">:: PassageReady [script]
+[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="700,275" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The tavern is filled with a mix of smugglers, traders, and other spacefarers. As you settle in with a drink, you overhear various conversations. There could be opportunities here.
 
+&lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/EnjoyADrink.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Listen to the Smugglers&#39; Conversation-&gt;Smugglers Conversation]]
 [[Chat with the Trader at the Bar-&gt;Trader Conversation]]
 [[Order another Drink-&gt;Another Drink]]
-[[Leave the Tavern-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="10" name="The Shadowrunner" tags="" position="675,50" size="100,100">:: PassageReady [script]
+[[Leave the Tavern-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="10" name="The Shadowrunner" tags="" position="675,50" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven&#39;s ship is a sleek, black and silver vessel called the ShadowRunner. It&#39;s a modified and heavily armed version of a standard planetary transport vessel. It&#39;s equipped with the latest stealth technology and has the ability to navigate through asteroid fields and evade pursuit from law enforcement or hostile forces. The ShadowRunner also has a spacious cargo hold, capable of carrying all sorts of illicit goods, from rare earth elements to exotic alien creatures.
 
-&lt;img src=&quot;ShadowRunner.png&quot; alt=&quot;Shadowrunner, Ravens spaceship&quot;&gt;
+&lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/ShadowRunner.png&quot; alt=&quot;Shadowrunner, Ravens spaceship&quot; width=&quot;700&quot; height=&quot;500&quot;&gt;
 
 The cockpit is Raven&#39;s domain, featuring the latest navigation and defensive systems. It&#39;s also equipped with a state-of-the-art artificial intelligence system, providing Raven with a reliable co-pilot and advisor. The rest of the ship includes a small armory, sleeping quarters for the crew, and a lounge area. The ShadowRunner is not just a means of transportation for Raven, but a symbol of her success and a reflection of her style. 
+
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 [[Examine the Job Offers-&gt;Job Offers]]
 [[Check the Ship&#39;s Systems-&gt;Ship Systems]]
 [[Visit the Local Tavern-&gt;Local Tavern]]
-[[Visit the Station Delta-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="11" name="Plan Route" tags="" position="75,700" size="100,100">:: PassageReady [script]
+[[Visit the Station Delta-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="11" name="Plan Route" tags="" position="75,700" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Plan Route
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+
 Planning a safe route is crucial. The shorter route is faster but riskier, while the longer route is safer but consumes more fuel.
 
 [[Take the Shorter Route-&gt;Shorter Route]]
 [[Take the Longer Route-&gt;Longer Route]]
-</tw-passagedata><tw-passagedata pid="12" name="Gather Supplies" tags="" position="225,525" size="100,100">:: PassageReady [script]
+</tw-passagedata><tw-passagedata pid="12" name="Gather Supplies" tags="" position="225,525" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Gather Supplies
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+
 You decide to gather extra supplies.
 
 [[Buy Additional Fuel-&gt;Fuel Depot]]
-[[Buy Additional Phasers-&gt;Weapons Dealer]]</tw-passagedata><tw-passagedata pid="13" name="Shorter Route" tags="" position="50,875" size="100,100">:: PassageReady [script]
+[[Buy Additional Phasers-&gt;Weapons Dealer]]</tw-passagedata><tw-passagedata pid="13" name="Shorter Route" tags="" position="50,875" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-:: Shorter Route
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+
 (set: $Fuel to $Fuel - 300)
 The risk pays off and you&#39;ve saved fuel, but encountered Enforcers. A battle ensues.
 
 [[Engage in Battle-&gt;Battle]]
 [[Attempt to Evade-&gt;Evade]]</tw-passagedata><tw-passagedata pid="14" name="Longer Route" tags="" position="225,700" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+
+:: InventoryDisplay
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 :: Longer Route
 (set: $Fuel to $Fuel - 500)
@@ -182,6 +286,14 @@ The longer route consumes more fuel but you avoid the Enforcers.
 </tw-passagedata><tw-passagedata pid="15" name="Battle" tags="" position="25,1050" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
+:: InventoryDisplay
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 :: Battle
 A fierce battle with the Galactic Enforcers ensues. You manage to defeat them, finding extra fuel and gold in their wreckage.
 (set: $Fuel to $Fuel + 100)
@@ -190,11 +302,27 @@ A fierce battle with the Galactic Enforcers ensues. You manage to defeat them, f
 [[Continue to Exarion-&gt;Arrival at Exarion]]</tw-passagedata><tw-passagedata pid="16" name="Evade" tags="" position="225,875" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
+:: InventoryDisplay
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 :: Evade
 You manage to evade the Enforcers but it was a close call.
 
 [[Continue to Exarion-&gt;Arrival at Exarion]]</tw-passagedata><tw-passagedata pid="17" name="Arrival at Exarion" tags="" position="200,1050" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+
+:: InventoryDisplay
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 :: Arrival at Exarion
 You&#39;ve arrived at Exarion and successfully collect the artifacts.
@@ -204,6 +332,14 @@ You&#39;ve arrived at Exarion and successfully collect the artifacts.
 
 </tw-passagedata><tw-passagedata pid="18" name="Black Market Phasers" tags="" position="375,1050" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+
+:: InventoryDisplay
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 :: Buy Phasers
 (set: $Phaser to $Phaser + 200)
@@ -215,6 +351,14 @@ You buy some extra phasers.
 </tw-passagedata><tw-passagedata pid="19" name="Black Market Fuel" tags="" position="375,875" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
+:: InventoryDisplay
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 :: Buy Fuel
 (set: $Fuel to $Fuel + 200)
 (set: $Gold to $Gold - 200)
@@ -225,11 +369,19 @@ You buy some extra fuel.
 </tw-passagedata><tw-passagedata pid="20" name="Deliver Artifacts" tags="" position="475,700" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
+:: InventoryDisplay
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 : Deliver Artifacts
 You deliver the artifacts and receive your payment.
 (set: $Gold to $Gold + 5000)
 
-[[Return to Station Delta-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="21" name="Smugglers Conversation" tags="" position="725,600" size="100,100">:: PassageReady [script]
+[[Return to Station Delta-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="21" name="Smugglers Conversation" tags="" position="725,600" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 A group of smugglers are discussing a recent heist. They mention a hidden stash of goods they couldn&#39;t retrieve.
@@ -239,102 +391,189 @@ A group of smugglers are discussing a recent heist. They mention a hidden stash 
   Your browser does not support the video tag.
 &lt;/video&gt;
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Offer to Retrieve the Stash-&gt;Retrieve Stash]]
-[[Ignore and Return to your Drink-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="22" name="Trader Conversation" tags="" position="1075,575" size="100,100">:: PassageReady [script]
+[[Ignore and Return to your Drink-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="22" name="Trader Conversation" tags="" position="1075,575" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The trader seems down on his luck. He talks about a rare item he&#39;s trying to sell quickly for some cash.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Offer to Buy the Item-&gt;Buy Item]]
-[[Sympathize but Decline-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="23" name="Retrieve Stash" tags="" position="725,775" size="100,100">:: PassageReady [script]
+[[Sympathize but Decline-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="23" name="Retrieve Stash" tags="" position="725,775" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You offer to retrieve the stash for a share of the goods. They agree to give you 30% of whatever you bring back.
 
-[[Plan the Retrieval-&gt;Plan Retrieval]]</tw-passagedata><tw-passagedata pid="24" name="Buy Item" tags="" position="900,550" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Plan the Retrieval-&gt;Plan Retrieval]]</tw-passagedata><tw-passagedata pid="24" name="Buy Item" tags="" position="900,550" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The trader offers you a rare navigational module for your ship, costing 200 Gold. It&#39;s a steal for such a piece.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Buy the Module-&gt;Purchase Module]]
-[[Politely Decline-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="25" name="Plan Retrieval" tags="" position="925,825" size="100,100">:: PassageReady [script]
+[[Politely Decline-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="25" name="Plan Retrieval" tags="" position="925,825" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The stash is said to be in a derelict ship nearby. It could be risky, but rewarding.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Head to the Ship-&gt;Derelict Ship]]
-[[Decide It&#39;s Too Risky-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="26" name="Purchase Module" tags="" position="925,700" size="100,100">:: PassageReady [script]
+[[Decide It&#39;s Too Risky-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="26" name="Purchase Module" tags="" position="925,700" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 (set: $Gold to $Gold - 200)
 (set: $Map to true)
 You purchase the module and install it on your ship. This could come in handy.
 
-[[Return to Tavern-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="27" name="Derelict Ship" tags="" position="675,950" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Return to Tavern-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="27" name="Derelict Ship" tags="" position="675,950" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You find the ship and manage to retrieve the stash, which includes gold and a few useful items.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 (set: $Gold to $Gold + 1000)
 (set: $Phaser to $Phaser + 200)
-[[Return to Tavern-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="28" name="Inventory" tags="" position="1175,125" size="100,100">:: Inventory
-Your current inventory is:
-
-* Fuel: $Fuel
-* Gold: $Gold
-* Phasers: $Phaser
-* Map: $Map
-* Health: $Health
-* ShadowRunner: $ShipStatus
-
-[[Back-&gt;Local Tavern]]
-</tw-passagedata><tw-passagedata pid="29" name="Another Drink" tags="" position="825,950" size="100,100">:: PassageReady [script]
+[[Return to Tavern-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="28" name="Another Drink" tags="" position="825,950" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 As you sip your drink, a cloaked figure approaches you. Underneath the hood, you see a pair of sharp, calculating eyes. &quot;Raven, I&#39;ve heard about you. I have a proposition,&quot; they say, their voice low and raspy.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Hear the Proposition-&gt;Proposition]]
-[[Decline and Stay at the Bar-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="30" name="Proposition" tags="" position="900,1075" size="100,100">:: PassageReady [script]
+[[Decline and Stay at the Bar-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="29" name="Proposition" tags="" position="900,1075" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &quot;The job is simple,&quot; the stranger begins. &quot;Retrieve a lost artifact from the ruins of Zanaris. It&#39;s dangerous, but the reward is substantial.&quot; 
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Accept the Job-&gt;Accept Job]]
-[[Politely Decline-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="31" name="Accept Job" tags="" position="650,1100" size="100,100">:: PassageReady [script]
+[[Politely Decline-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="30" name="Accept Job" tags="" position="650,1100" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You nod in agreement. &quot;I&#39;m in.&quot; The figure hands you a data chip with the coordinates and disappears into the crowd. 
 
-[[Prepare for the Journey-&gt;Preparation]]</tw-passagedata><tw-passagedata pid="32" name="Preparation" tags="" position="1775,75" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Prepare for the Journey-&gt;Preparation]]</tw-passagedata><tw-passagedata pid="31" name="Preparation" tags="" position="1775,75" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You prepare for the journey to Zanaris. As you leave the space station, an enemy ship ambushes you!
 
 (set: $Health to $Health - 200) &lt;!-- Reducing Health due to ambush --&gt;
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Engage in Battle-&gt;Space Battle]]
-[[Try to Outrun Them-&gt;Outrun]]</tw-passagedata><tw-passagedata pid="33" name="Space Battle" tags="" position="1600,175" size="100,100">:: PassageReady [script]
+[[Try to Outrun Them-&gt;Outrun]]</tw-passagedata><tw-passagedata pid="32" name="Space Battle" tags="" position="1600,175" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The battle is tough, but you manage to outmaneuver the enemy.
 
 (set: $ShipStatus to $ShipStatus - 300) &lt;!-- Damage to the ship --&gt;
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Continue to Zanaris-&gt;To Zanaris]]
-[[Return for Repairs-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="34" name="Outrun" tags="" position="1925,175" size="100,100">:: PassageReady [script]
+[[Return for Repairs-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="33" name="Outrun" tags="" position="1925,175" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You push the engines to their limit and manage to escape, but your ship takes some damage.
 
 (set: $ShipStatus to $ShipStatus - 200)
 
-[[Continue to Zanaris-&gt;To Zanaris]]</tw-passagedata><tw-passagedata pid="35" name="To Zanaris" tags="" position="1375,400" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Continue to Zanaris-&gt;To Zanaris]]</tw-passagedata><tw-passagedata pid="34" name="To Zanaris" tags="" position="1375,400" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 As you approach Zanaris, you feel a sense of dread. The planet is notorious for its dangerous wildlife and treacherous terrain.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Explore the Ruins-&gt;Explore Ruins]]
-[[Reconsider and Leave-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="36" name="Ship Repairs" tags="" position="2375,325" size="100,100">:: PassageReady [script]
+[[Reconsider and Leave-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="35" name="Ship Repairs" tags="" position="2375,325" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You dock at the nearest station for repairs.
@@ -344,99 +583,197 @@ You dock at the nearest station for repairs.
 
 [[Return to the Bar-&gt;Enjoy a Drink]]
 [[Head Back to Zanaris-&gt;To Zanaris]]
-[[Station Delta-&gt;Station Delta]] </tw-passagedata><tw-passagedata pid="37" name="Explore Ruins" tags="" position="1800,325" size="100,100">:: PassageReady [script]
+[[Station Delta-&gt;Station Delta]] </tw-passagedata><tw-passagedata pid="36" name="Explore Ruins" tags="" position="1800,325" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The ruins of Zanaris are as haunting as they are beautiful. As you delve deeper, you encounter various hazards.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Face the Dangers-&gt;Face Dangers]]
-[[Retreat and return to Station Delta-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="38" name="Face Dangers" tags="" position="1950,350" size="100,100">:: PassageReady [script]
+[[Retreat and return to Station Delta-&gt;Station Delta]]</tw-passagedata><tw-passagedata pid="37" name="Face Dangers" tags="" position="1950,350" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You bravely navigate through the ruins. However, a hidden trap injures you.
 
 (set: $Health to $Health - 300)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Find the Artifact-&gt;Find Artifact]]
-[[Return to Ship for Aid-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="39" name="Find Artifact" tags="" position="1800,500" size="100,100">:: PassageReady [script]
+[[Return to Ship for Aid-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="38" name="Find Artifact" tags="" position="1800,500" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Against all odds, you find the artifact. It&#39;s as spectacular as promised. Now, to get it back to the cloaked figure.
 
-[[Return to the Stranger-&gt;Return to Stranger]]</tw-passagedata><tw-passagedata pid="40" name="Return to Stranger" tags="" position="1600,400" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Return to the Stranger-&gt;Return to Stranger]]</tw-passagedata><tw-passagedata pid="39" name="Return to Stranger" tags="" position="1600,400" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You return the artifact to the stranger and receive your reward. Despite the dangers, it was worth it.
 
 (set: $Gold to $Gold + 5000) &lt;!-- Increasing Gold --&gt;
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Celebrate at the Bar-&gt;Enjoy a Drink]]
-[[Plan Your Next Move-&gt;Start]]</tw-passagedata><tw-passagedata pid="41" name="Start" tags="" position="1625,650" size="100,100">:: PassageReady [script]
+[[Plan Your Next Move-&gt;Start]]</tw-passagedata><tw-passagedata pid="40" name="Start" tags="" position="1625,650" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 As you contemplate your next step, a cryptic message arrives for you. It&#39;s an invitation to participate in the legendary Galactic Heist Competition, a contest where the galaxy&#39;s best smugglers compete for a grand prize. The risks are high, but so are the rewards.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Accept the Invitation-&gt;Galactic Heist]]
-[[Decline and Seek Other Ventures-&gt;Seek Other Ventures]]</tw-passagedata><tw-passagedata pid="42" name="Galactic Heist" tags="" position="1425,600" size="100,100">:: PassageReady [script]
+[[Decline and Seek Other Ventures-&gt;Seek Other Ventures]]</tw-passagedata><tw-passagedata pid="41" name="Galactic Heist" tags="" position="1425,600" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The competition involves three challenging phases: a high-stakes race through an asteroid field, decrypting an ancient alien artifact, and a daring heist from a heavily guarded space fortress.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Begin the Asteroid Race-&gt;Asteroid Race]]
-[[Back Out-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="43" name="Seek Other Ventures" tags="" position="1825,650" size="100,100">:: PassageReady [script]
+[[Back Out-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="42" name="Seek Other Ventures" tags="" position="1825,650" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Haunted by dreams that feel more like visions, Raven decides to seek out the meaning behind them. Each dream points to an ancient star system believed to be cursed or haunted. 
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Research the Star System-&gt;Research]]
 [[Visit a Seer-&gt;Seer Visit]]
-[[Ignore the Dreams-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="44" name="Asteroid Race" tags="" position="1625,875" size="100,100">:: PassageReady [script]
+[[Ignore the Dreams-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="43" name="Asteroid Race" tags="" position="1625,875" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The race is treacherous. As you navigate through the asteroids, your ship suffers damage.
 
 (set: $ShipStatus to $ShipStatus - 200)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Continue Racing-&gt;Finish Race]]
-[[Abort and Repair Ship-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="45" name="Plan Your Next Move" tags="" position="1800,1150" size="100,100">:: PassageReady [script]
+[[Abort and Repair Ship-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="44" name="Plan Your Next Move" tags="" position="1800,1150" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Weary from the relentless dangers and the constant high stakes of her recent adventures, Raven craves a moment of respite. She sets her course back to Station Delta, yearning for the familiar hum of the space station and the solace of a good drink.
 
-[[Return to the Local Tavern-&gt;Local Tavern]]</tw-passagedata><tw-passagedata pid="46" name="Finish Race" tags="" position="1050,975" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Return to the Local Tavern-&gt;Local Tavern]]</tw-passagedata><tw-passagedata pid="45" name="Finish Race" tags="" position="1050,975" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You push through and finish the race, but not without cost. Your ship needs urgent repairs or push on with ever increasing risk...
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Head to Repair Dock-&gt;Ship Repairs]]
-[[ Decrypt Artifact-&gt;Decrypt Artifact]]</tw-passagedata><tw-passagedata pid="47" name="Decrypt Artifact" tags="" position="1025,1425" size="100,100">:: PassageReady [script]
+[[ Decrypt Artifact-&gt;Decrypt Artifact]]</tw-passagedata><tw-passagedata pid="46" name="Decrypt Artifact" tags="" position="1025,1425" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The next challenge is to decrypt an ancient alien artifact. It&#39;s a test of wit and intelligence.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Attempt to Decrypt-&gt;Decryption Attempt]]
-[[Seek Help from an Expert-&gt;Seek Expert]]</tw-passagedata><tw-passagedata pid="48" name="Decryption Attempt" tags="" position="825,1425" size="100,100">:: PassageReady [script]
+[[Seek Help from an Expert-&gt;Seek Expert]]</tw-passagedata><tw-passagedata pid="47" name="Decryption Attempt" tags="" position="825,1425" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The decryption is complex. You spend hours on it, which takes a toll on your health.
 
 (set: $Health to $Health - 150)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Succeed in Decryption-&gt;Heist Preparation]]
-[[Seek Medical Attention-&gt;Seek Medical Help]]</tw-passagedata><tw-passagedata pid="49" name="Seek Expert" tags="" position="1200,1575" size="100,100">:: PassageReady [script]
+[[Seek Medical Attention-&gt;Seek Medical Help]]</tw-passagedata><tw-passagedata pid="48" name="Seek Expert" tags="" position="1200,1575" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You find an expert who helps you with the decryption but at a cost.
 
 (set: $Gold to $Gold - 1000)
 
-[[Prepare for the Heist-&gt;Heist Preparation]]</tw-passagedata><tw-passagedata pid="50" name="Heist Preparation" tags="" position="650,1600" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Prepare for the Heist-&gt;Heist Preparation]]</tw-passagedata><tw-passagedata pid="49" name="Heist Preparation" tags="" position="650,1600" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The final phase is a heist from a space fortress. It&#39;s going to require stealth, cunning, and perhaps a bit of firepower.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Plan a Stealth Approach-&gt;Stealth Approach]]
-[[Go in Guns Blazing-&gt;Aggressive Approach]]</tw-passagedata><tw-passagedata pid="51" name="Seek Medical Help" tags="" position="975,1550" size="100,100">:: PassageReady [script]
+[[Go in Guns Blazing-&gt;Aggressive Approach]]</tw-passagedata><tw-passagedata pid="50" name="Seek Medical Help" tags="" position="975,1550" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 After the intense effort of decrypting the artifact, you realize you need medical attention. You head to a nearby medical facility on the space station.
@@ -445,18 +782,32 @@ Upon arrival, the medical droids attend to you, administering advanced healing t
 
 (set: $Health to 1000) &lt;!-- Resetting Health to 1000 --&gt;
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 Feeling rejuvenated and ready to tackle the next challenge, you ponder your next move.
 
 [[Prepare for the Heist-&gt;Heist Preparation]]
-[[Return to the Bar-&gt;Local Tavern]]</tw-passagedata><tw-passagedata pid="52" name="Stealth Approach" tags="" position="600,1775" size="100,100">:: PassageReady [script]
+[[Return to the Bar-&gt;Local Tavern]]</tw-passagedata><tw-passagedata pid="51" name="Stealth Approach" tags="" position="600,1775" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Your stealthy approach avoids most conflicts, but a close call leaves you slightly injured.
 
 (set: $Health to $Health - 100)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Secure the Prize-&gt;Secure Prize]]
-[[Abort and Retreat-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="53" name="Aggressive Approach" tags="" position="900,1700" size="100,100">:: PassageReady [script]
+[[Abort and Retreat-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="52" name="Aggressive Approach" tags="" position="900,1700" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The direct approach leads to a firefight. You win but at a cost.
@@ -464,201 +815,388 @@ The direct approach leads to a firefight. You win but at a cost.
 (set: $Health to $Health - 300)
 (set: $ShipStatus to $ShipStatus - 300)
 
-[[Grab the Prize-&gt;Secure Prize]]</tw-passagedata><tw-passagedata pid="54" name="Secure Prize" tags="" position="750,1775" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Grab the Prize-&gt;Secure Prize]]</tw-passagedata><tw-passagedata pid="53" name="Secure Prize" tags="" position="750,1775" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You successfully secure the prize from the heist, earning you fame and a substantial reward.
 
 (set: $Gold to $Gold + 10000)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Bask in Glory-&gt;Celebrate]]
-[[Lay Low for a While-&gt;Lay Low]]</tw-passagedata><tw-passagedata pid="55" name="Celebrate" tags="" position="650,2050" size="100,100">:: PassageReady [script]
+[[Lay Low for a While-&gt;Lay Low]]</tw-passagedata><tw-passagedata pid="54" name="Celebrate" tags="" position="650,2050" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You decide to celebrate your victory at the local tavern, sharing tales of your adventure.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Join the Revelry-&gt;Local Tavern]]
-[[Rest and Plan Ahead-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="56" name="Lay Low" tags="" position="850,1925" size="100,100">:: PassageReady [script]
+[[Rest and Plan Ahead-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="55" name="Lay Low" tags="" position="850,1925" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Laying low seems wise. You plan your next move in the quiet of your ship.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Contemplate Future Ventures-&gt;Plan Your Next Move]]
-[[Return to Station Delta for some much needed rest-&gt;Station Delta]] </tw-passagedata><tw-passagedata pid="57" name="Research" tags="" position="1200,1400" size="100,100">:: PassageReady [script]
+[[Return to Station Delta for some much needed rest-&gt;Station Delta]] </tw-passagedata><tw-passagedata pid="56" name="Research" tags="" position="1200,1400" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Your research reveals tales of an ancient alien civilization that once thrived in that star system. Many believe it holds powerful secrets and curses.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Set Course for the System-&gt;Set Course]]
-[[Consult with an Expert-&gt;Consult Expert]]</tw-passagedata><tw-passagedata pid="58" name="Seer Visit" tags="" position="2275,1600" size="100,100">:: PassageReady [script]
+[[Consult with an Expert-&gt;Consult Expert]]</tw-passagedata><tw-passagedata pid="57" name="Seer Visit" tags="" position="2275,1600" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The seer speaks of dark energy surrounding your fate. She warns of danger but hints at a great destiny.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Heed the Warning-&gt;Plan Your Next Move]]
-[[Explore the Star System-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="59" name="Set Course" tags="" position="2100,1775" size="100,100">:: PassageReady [script]
+[[Explore the Star System-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="58" name="Set Course" tags="" position="2100,1775" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You set course for the mysterious star system. As you approach, strange phenomena begin to occur. Your instruments flicker and you hear eerie sounds.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Investigate the Phenomena-&gt;Investigate]]
 [[Retreat-&gt;Plan Your Next Move]]
-</tw-passagedata><tw-passagedata pid="60" name="Consult Expert" tags="" position="2425,1700" size="100,100">:: PassageReady [script]
+</tw-passagedata><tw-passagedata pid="59" name="Consult Expert" tags="" position="2425,1700" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Seeking answers, Raven visits Dr. Elara Vex, a renowned expert in ancient galactic civilizations. Dr. Vex, intrigued by Raven&#39;s descriptions, believes that the dreams are linked to the fabled Celestial Key, an artifact capable of unlocking hidden sectors of the galaxy.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Agree to Search for the Celestial Key-&gt;Key Search]]
-[[Decide Against the Quest-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="61" name="Investigate" tags="" position="1350,1650" size="100,100">:: PassageReady [script]
+[[Decide Against the Quest-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="60" name="Investigate" tags="" position="1350,1650" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The phenomena lead you to an ancient alien ruin on a desolate planet. But as you land, your ship is damaged by an unknown force.
 
 (set: $ShipStatus to $ShipStatus - 200)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Explore the Ruins-&gt;Explore Mystic Ruins]]
-[[Attempt Emergency Repairs-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="62" name="Explore Mystic Ruins" tags="" position="2400,1850" size="100,100">:: PassageReady [script]
+[[Attempt Emergency Repairs-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="61" name="Explore Mystic Ruins" tags="" position="2400,1850" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The ruins are filled with strange inscriptions and artifacts. As you delve deeper, you feel a presence watching you.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Examine an Artifact-&gt;Examine Artifact]]
-[[Leave the Ruins-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="63" name="Examine Artifact" tags="" position="2225,2000" size="100,100">:: PassageReady [script]
+[[Leave the Ruins-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="62" name="Examine Artifact" tags="" position="2225,2000" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 As you touch the artifact, visions flood your mind, revealing secrets of the ancient civilization. But the power of the artifact drains your health.
 
 (set: $Health to $Health - 300)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Take the Artifact-&gt;Take Artifact]]
-[[Leave it Behind-&gt;Leave Ruins]]</tw-passagedata><tw-passagedata pid="64" name="Take Artifact" tags="" position="2050,2025" size="100,100">:: PassageReady [script]
+[[Leave it Behind-&gt;Leave Ruins]]</tw-passagedata><tw-passagedata pid="63" name="Take Artifact" tags="" position="1975,1975" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You decide to take the artifact with you. It may hold the key to understanding your dreams, but at what cost?
 
+
+&lt;p&gt;You have discovered the ancient artifact! Claim your reward as an NFT.&lt;/p&gt;
+
 (set: $Gold to $Gold + 2000) &lt;!-- Assuming the artifact has value --&gt;
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Return to the Ship-&gt;Set New Course]]
-</tw-passagedata><tw-passagedata pid="65" name="Leave Ruins" tags="" position="2400,2125" size="100,100">:: PassageReady [script]
+
+</tw-passagedata><tw-passagedata pid="64" name="Leave Ruins" tags="" position="2400,2125" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Feeling overwhelmed by the strange energy, you decide to leave. The mysteries remain unsolved, but perhaps some secrets are best left undiscovered.
 
-[[Return to the Ship-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="66" name="Set New Course" tags="" position="1425,1850" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Return to the Ship-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="65" name="Set New Course" tags="" position="1425,1850" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 With the artifact onboard, or with more questions than answers, you set a course back. The adventure leaves you pondering about the vast mysteries of the universe and your place within it.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Reflect on the Experience-&gt;Reflect]]
-[[Continue Your Journey-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="67" name="Reflect" tags="" position="1125,1775" size="100,100">:: PassageReady [script]
+[[Continue Your Journey-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="66" name="Reflect" tags="" position="1125,1775" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The experience has changed Raven. She feels more connected to the cosmos, yet wary of its unknown dangers.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Seek Medical Help-&gt;Seek Medical Help]]
-[[Plan Your Next Adventure-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="68" name="Key Search" tags="" position="2550,1825" size="100,100">:: PassageReady [script]
+[[Plan Your Next Adventure-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="67" name="Key Search" tags="" position="2550,1825" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Dr. Vex provides the last known coordinates of the artifact, warning that it&#39;s located in a sector notorious for its dangerous anomalies and aggressive inhabitants.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Set Course for the Sector-&gt;Dangerous Sector]]
-[[Have Second Thoughts-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="69" name="Reassess at Station Delta" tags="" position="2950,1375" size="100,100">:: PassageReady [script]
+[[Have Second Thoughts-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="68" name="Reassess at Station Delta" tags="" position="2950,1375" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven is constantly challenged with the temptation to return to the safety of Station Delta, creating a tension between the allure of adventure and the comfort of the familiar. Each decision she makes impacts her health, ship status, and the outcome of her quest, adding depth and complexity to her  journey.
 
-[[Check Inventory-&gt;Check Inventory]] 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Return to Station Delta for repairs and medical treatment-&gt;Station Delta]] 
-[[Local Tavern-&gt;Local Tavern]] </tw-passagedata><tw-passagedata pid="70" name="Dangerous Sector" tags="" position="2500,1975" size="100,100">:: PassageReady [script]
+[[Local Tavern-&gt;Local Tavern]] </tw-passagedata><tw-passagedata pid="69" name="Dangerous Sector" tags="" position="2500,1975" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 As Raven&#39;s ship, the Shadowrunner, enters the sector, she&#39;s immediately confronted with a series of cosmic anomalies causing severe ship damage.
 
 (set: $ShipStatus to $ShipStatus - 200)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Navigate Through Anomalies-&gt;Navigate Anomalies]]
-[[Retreat and Repair-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="71" name="Navigate Anomalies" tags="" position="2600,2125" size="100,100">:: PassageReady [script]
+[[Retreat and Repair-&gt;Ship Repairs]]</tw-passagedata><tw-passagedata pid="70" name="Navigate Anomalies" tags="" position="2600,2125" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven skillfully navigates through the treacherous anomalies but finds herself face-to-face with a hostile alien fleet.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Engage in Combat-&gt;Space Combat]]
-[[Attempt to Evade-&gt;Evade Fleet]]</tw-passagedata><tw-passagedata pid="72" name="Space Combat" tags="" position="2975,500" size="100,100">:: PassageReady [script]
+[[Attempt to Evade-&gt;Evade Fleet]]</tw-passagedata><tw-passagedata pid="71" name="Space Combat" tags="" position="2975,500" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 The battle is intense and Raven&#39;s ship takes significant damage. If the damage is too great, it could be the end of her journey.
 
 
 
-</tw-passagedata><tw-passagedata pid="73" name="Evade Fleet" tags="" position="3275,550" size="100,100">:: PassageReady [script]
+</tw-passagedata><tw-passagedata pid="72" name="Evade Fleet" tags="" position="3275,550" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven narrowly evades the fleet but not without sustaining damage.
 
 (set: $ShipStatus to $ShipStatus - 150)
 
-[[Proceed to Artifact Location-&gt;Artifact Location]]</tw-passagedata><tw-passagedata pid="74" name="Artifact Location" tags="" position="3100,500" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Proceed to Artifact Location-&gt;Artifact Location]]</tw-passagedata><tw-passagedata pid="73" name="Artifact Location" tags="" position="3100,500" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven arrives at a desolate planet rumored to house the Celestial Key. The planet is rife with danger, from treacherous terrain to unknown creatures.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Explore the Planet-&gt;Explore Planet]]
-[[Decide to Return to Station Delta-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="75" name="Explore Planet" tags="" position="3275,750" size="100,100">:: PassageReady [script]
+[[Decide to Return to Station Delta-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="74" name="Explore Planet" tags="" position="3275,750" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The exploration is perilous, and Raven sustains injuries while navigating through hazardous environments.
 
 (set: $Health to $Health - 200)
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Find the Celestial Key-&gt;Find Key]]
-[[Give Up the Search-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="76" name="Find Key" tags="" position="3075,875" size="100,100">:: PassageReady [script]
+[[Give Up the Search-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="75" name="Find Key" tags="" position="3075,875" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Against all odds, Raven discovers the Celestial Key hidden within an ancient alien temple. However, its guardians awaken, initiating a fierce battle.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Fight the Guardians-&gt;Fight Guardians]]
-[[Flee with the Key-&gt;Escape with Key]]</tw-passagedata><tw-passagedata pid="77" name="Fight Guardians" tags="" position="2900,825" size="100,100">:: PassageReady [script]
+[[Flee with the Key-&gt;Escape with Key]]</tw-passagedata><tw-passagedata pid="76" name="Fight Guardians" tags="" position="2900,825" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 Raven fights bravely against the guardians. However, the battle is fierce and takes a toll on her health.
 
 
 
-</tw-passagedata><tw-passagedata pid="78" name="Escape with Key" tags="" position="3300,950" size="100,100">:: PassageReady [script]
+</tw-passagedata><tw-passagedata pid="77" name="Escape with Key" tags="" position="3300,950" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven grabs the Key and makes a hasty retreat, narrowly escaping the wrath of the guardians.
 
-[[Hastily Return to Dr. Vex-&gt;Return to Vex]]</tw-passagedata><tw-passagedata pid="79" name="Return to Vex" tags="" position="3100,1075" size="100,100">:: PassageReady [script]
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
+[[Hastily Return to Dr. Vex-&gt;Return to Vex]]</tw-passagedata><tw-passagedata pid="78" name="Return to Vex" tags="" position="3100,1075" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven returns to Dr. Vex, who is astonished by the discovery. The Celestial Key could unlock new paths and opportunities in the galaxy.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[Discuss New Opportunities-&gt;New Opportunities]]
-[[Reassess at Station Delta-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="80" name="New Opportunities" tags="" position="3175,1225" size="100,100">:: PassageReady [script]
+[[Reassess at Station Delta-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="79" name="New Opportunities" tags="" position="3175,1225" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Dr. Vex shares information about uncharted territories that the Key could unlock. Raven is faced with the choice of exploring these new frontiers or returning to familiar grounds.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
+
 [[A drink is needed-&gt;Local Tavern]]
 [[Return to Station Delta for a Break-&gt;Station Delta]]
-[[Check Inventory--&gt;Check Inventory]]</tw-passagedata><tw-passagedata pid="81" name="Check Inventory" tags="" position="3325,1100" size="100,100">:: Inventory
-Your current inventory is:
-
-* Fuel: $Fuel
-* Gold: $Gold
-* Phasers: $Phaser
-* Map: $Map
-* Health: $Health
-* ShadowRunner: $ShipStatus
-
-
-[[Back-&gt;New Opportunities]]
-[[Back-&gt;Reassess at Station Delta]] </tw-passagedata><tw-passagedata pid="82" name="End Game" tags="" position="2650,350" size="100,100">Unfortunately, Raven&#39;s journey has come to an abrupt end. Whether due to overwhelming odds in battle, a fatal misstep on a treacherous planet, or the harsh realities of space, her adventures as a deep space smuggler are over. Her ship, the Shadowrunner, drifts silently in the cosmos, a solemn reminder of the risks that come with living on the edge of the law.
+</tw-passagedata><tw-passagedata pid="80" name="End Game" tags="" position="2650,350" size="100,100">Unfortunately, Raven&#39;s journey has come to an abrupt end. Whether due to overwhelming odds in battle, a fatal misstep on a treacherous planet, or the harsh realities of space, her adventures as a deep space smuggler are over. Her ship, the Shadowrunner, drifts silently in the cosmos, a solemn reminder of the risks that come with living on the edge of the law.
 
 Thank you for playing. Raven&#39;s story ends here.
 
-[[Restart the Adventure-&gt;Raven]]</tw-passagedata><tw-passagedata pid="83" name="PassageReady" tags="" position="2475,125" size="100,100">:: PassageReady [script]
+[[Restart the Adventure-&gt;Raven]]</tw-passagedata><tw-passagedata pid="81" name="PassageReady" tags="" position="2475,125" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
