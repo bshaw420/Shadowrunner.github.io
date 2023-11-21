@@ -48,7 +48,7 @@ Despite the risks and uncertainties of life on Station Delta, Raven feels at hom
 
 [[Examine the Job Offers-&gt;Job Offers]]
 [[Check the Ship&#39;s Systems-&gt;Ship Systems]]
-[[Return to the Shadowrunner-&gt;The Shadowrunner]]
+[[Raven&#39;s ship, Shadowrunner-&gt;The Shadowrunner]]
 [[Visit the Local Tavern-&gt;Local Tavern]]
 [[Ship Repairs-&gt;Ship Repairs]] 
 
@@ -107,7 +107,7 @@ You take a moment to review the Shadowrunner&#39;s systems. Everything seems in 
 
 [[Buy Fuel-&gt;Fuel Depot]]
 [[Upgrade Weapons-&gt;Weapons Dealer]]
-[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="950,75" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="1000,75" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/LocalTavern.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
 
@@ -174,7 +174,7 @@ You decide to upgrade your weapons. It costs &lt;b style=&quot;color:yellow;&quo
 (set: $Phaser to $Phaser + 500)
 (set: $Gold to $Gold - 500)
 
-[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="700,275" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="700,350" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/EnjoyADrink.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
 
@@ -754,6 +754,8 @@ You find an expert who helps you with the decryption but at a cost.
 
 The final phase is a heist from a space fortress. It&#39;s going to require stealth, cunning, and perhaps a bit of firepower.
 
+&lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/SpaceHeist.png&quot; alt=&quot;Shadowrunner, Ravens spaceship&quot; width=&quot;700&quot; height=&quot;500&quot;&gt;
+
 &lt;div id=&quot;inventory-display&quot;&gt;
 &lt;strong&gt;Inventory:&lt;/strong&gt;
 &lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
@@ -781,10 +783,16 @@ Upon arrival, the medical droids attend to you, administering advanced healing t
 Feeling rejuvenated and ready to tackle the next challenge, you ponder your next move.
 
 [[Prepare for the Heist-&gt;Heist Preparation]]
-[[Return to the Bar-&gt;Local Tavern]]</tw-passagedata><tw-passagedata pid="51" name="Stealth Approach" tags="" position="600,1775" size="100,100">
+[[Return to the Bar-&gt;Local Tavern]]</tw-passagedata><tw-passagedata pid="51" name="Stealth Approach" tags="" position="550,1775" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-Your stealthy approach avoids most conflicts, but a close call leaves you slightly injured.
+You opt for stealth, moving like a shadow through the dim corridors. Your heart pounds softly, the only sound in a world of silence. Caution is your ally, each step a careful dance to avoid detection.
+
+&quot;Your stealthy approach avoids most conflicts.&quot; You slip past potential confrontations, a ghost amidst the chaos. The thrill of evasion heightens your senses, each near-miss a testament to your skill.
+
+But even the best plans aren&#39;t foolproof. &quot;A close call leaves you slightly injured.&quot; In a moment&#39;s lapse, a stray shot grazes you, a sharp reminder of the ever-present danger. You press on, a bit more cautious, nursing your wound.
+
+With the majority of danger evaded, you exhale quietly. The mission continues, but for now, you&#39;ve managed to keep the worst at bay.
 
 (set: $Health to $Health - 100)
 
@@ -796,10 +804,14 @@ Your stealthy approach avoids most conflicts, but a close call leaves you slight
 &lt;/div&gt;
 
 [[Secure the Prize-&gt;Secure Prize]]
-[[Abort and Retreat-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="52" name="Aggressive Approach" tags="" position="900,1700" size="100,100">
+[[Abort and Retreat-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="52" name="Aggressive Approach" tags="" position="925,1725" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-The direct approach leads to a firefight. You win but at a cost.
+Choosing the direct approach, you steel yourself for battle. The corridors echo with the sounds of conflict as you engage the enemy. Phaser in hand, you weave through a storm of blaster fire, retaliating with precision. Every shot counts in this high-stakes dance of survival.
+
+&quot;The direct approach leads to a firefight.&quot; Amidst the chaos, you&#39;re a whirlwind of focus and determination. Blaster bolts light up the space around you, some finding their mark. Pain flares, but you push through, driven by the need to survive.
+
+As the last adversary falls, the silence is almost jarring. &quot;You win but at a cost.&quot; Wounded and weary, you survey the damage. It&#39;s a hard-won victory, underscoring the relentless challenges of space. Now, you must tend to your injuries and repair your ship, ready to face whatever comes next.
 
 (set: $Health to $Health - 300)
 (set: $ShipStatus to $ShipStatus - 300)
@@ -811,10 +823,10 @@ The direct approach leads to a firefight. You win but at a cost.
 &lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
 &lt;/div&gt;
 
-[[Grab the Prize-&gt;Secure Prize]]</tw-passagedata><tw-passagedata pid="53" name="Secure Prize" tags="" position="750,1775" size="100,100">
+[[Grab the Prize-&gt;Secure Prize]]</tw-passagedata><tw-passagedata pid="53" name="Secure Prize" tags="" position="750,1750" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-You successfully secure the prize from the heist, earning you fame and a substantial reward.
+Your audacious heist culminates with the acquisition of a legendary prize, catapulting you to fame and yielding a substantial reward. Your newfound fame opens doors but also attracts both allies and adversaries, altering your journey significantly. The hefty reward enhances your abilities, equipping you for future challenges. However, the heist&#39;s success also hints at upcoming trials, as the prized possession you&#39;ve secured draws attention from various corners, setting the stage for new adventures and dangers. 
 
 (set: $Gold to $Gold + 10000)
 
@@ -948,7 +960,7 @@ As you touch the artifact, visions flood your mind, revealing secrets of the anc
 &lt;/div&gt;
 
 [[Take the Artifact-&gt;Take Artifact]]
-[[Leave it Behind-&gt;Leave Ruins]]</tw-passagedata><tw-passagedata pid="63" name="Take Artifact" tags="" position="1975,1975" size="100,100">
+[[Leave it Behind-&gt;Leave Ruins]]</tw-passagedata><tw-passagedata pid="63" name="Take Artifact" tags="" position="2025,1925" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You decide to take the artifact with you. It may hold the key to understanding your dreams, but at what cost?
@@ -979,7 +991,7 @@ Feeling overwhelmed by the strange energy, you decide to leave. The mysteries re
 &lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
 &lt;/div&gt;
 
-[[Return to the Ship-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="65" name="Set New Course" tags="" position="1425,1850" size="100,100">
+[[Return to the Ship-&gt;Set Course]]</tw-passagedata><tw-passagedata pid="65" name="Set New Course" tags="" position="1325,1825" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 With the artifact onboard, or with more questions than answers, you set a course back. The adventure leaves you pondering about the vast mysteries of the universe and your place within it.
@@ -1018,7 +1030,7 @@ Dr. Vex provides the last known coordinates of the artifact, warning that it&#39
 &lt;/div&gt;
 
 [[Set Course for the Sector-&gt;Dangerous Sector]]
-[[Have Second Thoughts-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="68" name="Reassess at Station Delta" tags="" position="2950,1375" size="100,100">:: PassageReady [script]
+[[Have Second Thoughts-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="68" name="Reassess at Station Delta" tags="" position="2900,1200" size="100,100">:: PassageReady [script]
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven is constantly challenged with the temptation to return to the safety of Station Delta, creating a tension between the allure of adventure and the comfort of the familiar. Each decision she makes impacts her health, ship status, and the outcome of her quest, adding depth and complexity to her  journey.
@@ -1059,7 +1071,7 @@ Raven skillfully navigates through the treacherous anomalies but finds herself f
 &lt;/div&gt;
 
 [[Engage in Combat-&gt;Space Combat]]
-[[Attempt to Evade-&gt;Evade Fleet]]</tw-passagedata><tw-passagedata pid="71" name="Space Combat" tags="" position="2975,500" size="100,100">
+[[Attempt to Evade-&gt;Evade Fleet]]</tw-passagedata><tw-passagedata pid="71" name="Space Combat" tags="" position="2925,625" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &lt;div id=&quot;inventory-display&quot;&gt;
@@ -1073,7 +1085,7 @@ The battle is intense and Raven&#39;s ship takes significant damage. If the dama
 
 
 
-</tw-passagedata><tw-passagedata pid="72" name="Evade Fleet" tags="" position="3275,550" size="100,100">
+</tw-passagedata><tw-passagedata pid="72" name="Evade Fleet" tags="" position="3275,650" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven narrowly evades the fleet but not without sustaining damage.
@@ -1087,7 +1099,7 @@ Raven narrowly evades the fleet but not without sustaining damage.
 &lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
 &lt;/div&gt;
 
-[[Proceed to Artifact Location-&gt;Artifact Location]]</tw-passagedata><tw-passagedata pid="73" name="Artifact Location" tags="" position="3100,500" size="100,100">
+[[Proceed to Artifact Location-&gt;Artifact Location]]</tw-passagedata><tw-passagedata pid="73" name="Artifact Location" tags="" position="3100,600" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Raven arrives at a desolate planet rumored to house the Celestial Key. The planet is rife with danger, from treacherous terrain to unknown creatures.
@@ -1100,7 +1112,7 @@ Raven arrives at a desolate planet rumored to house the Celestial Key. The plane
 &lt;/div&gt;
 
 [[Explore the Planet-&gt;Explore Planet]]
-[[Decide to Return to Station Delta-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="74" name="Explore Planet" tags="" position="3275,750" size="100,100">
+[[Decide to Return to Station Delta-&gt;Reassess at Station Delta]]</tw-passagedata><tw-passagedata pid="74" name="Explore Planet" tags="" position="3275,800" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 The exploration is perilous, and Raven sustains injuries while navigating through hazardous environments.
