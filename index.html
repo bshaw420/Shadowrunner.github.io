@@ -107,7 +107,7 @@ You take a moment to review the Shadowrunner&#39;s systems. Everything seems in 
 
 [[Buy Fuel-&gt;Fuel Depot]]
 [[Upgrade Weapons-&gt;Weapons Dealer]]
-[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="1000,75" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="1250,50" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/LocalTavern.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
 
@@ -123,7 +123,7 @@ The tavern is bustling with activity. You overhear whispers of a lucrative, but 
 [[Enjoy a Drink-&gt;Enjoy a Drink]]
 [[Return to Ship Systems-&gt;Ship Systems]]
 [[Return to the Shadowrunner-&gt;The Shadowrunner]]
-[[Take Artifact-&gt;Take Artifact]] </tw-passagedata><tw-passagedata pid="6" name="Smuggling Job" tags="" position="50,550" size="100,100">
+</tw-passagedata><tw-passagedata pid="6" name="Smuggling Job" tags="" position="50,550" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 
@@ -174,7 +174,7 @@ You decide to upgrade your weapons. It costs &lt;b style=&quot;color:yellow;&quo
 (set: $Phaser to $Phaser + 500)
 (set: $Gold to $Gold - 500)
 
-[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="700,350" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="875,300" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/EnjoyADrink.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
 
@@ -562,7 +562,7 @@ As you approach Zanaris, you feel a sense of dread. The planet is notorious for 
 &lt;/div&gt;
 
 [[Explore the Ruins-&gt;Explore Ruins]]
-[[Reconsider and Leave-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="35" name="Ship Repairs" tags="" position="2375,325" size="100,100">
+[[Reconsider and Leave-&gt;Enjoy a Drink]]</tw-passagedata><tw-passagedata pid="35" name="Ship Repairs" tags="" position="2300,325" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 You dock at the nearest station for repairs.
@@ -571,7 +571,6 @@ You dock at the nearest station for repairs.
 (set: $ShipStatus to 1000) &lt;!-- Resetting Ship Status --&gt;
 
 [[Return to the Bar-&gt;Enjoy a Drink]]
-[[Head Back to Zanaris-&gt;To Zanaris]]
 [[Station Delta-&gt;Station Delta]] </tw-passagedata><tw-passagedata pid="36" name="Explore Ruins" tags="" position="1800,325" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
@@ -851,7 +850,7 @@ You decide to celebrate your victory at the local tavern, sharing tales of your 
 &lt;/div&gt;
 
 [[Join the Revelry-&gt;Local Tavern]]
-[[Rest and Plan Ahead-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="55" name="Lay Low" tags="" position="850,1925" size="100,100">
+[[Rest and Plan Ahead-&gt;Plan Your Next Move]]</tw-passagedata><tw-passagedata pid="55" name="Lay Low" tags="" position="825,1950" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 Laying low seems wise. You plan your next move in the quiet of your ship.
