@@ -27,7 +27,6 @@
 }
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Station Delta" tags="" position="350,50" size="100,100">
-
 Station Delta is a bustling spaceport located in a remote sector of the galaxy. It is a popular hub for spacefarers and smugglers alike, drawn to its convenient location near a major hyperspace route and its reputation for being a haven for those looking to avoid the prying eyes of the Galactic Council.
 
 The station itself is a sprawling complex of interconnected modules, with a central hub that serves as a marketplace and meeting place for those seeking work, supplies, or information. The hub is surrounded by a variety of shops and vendors, offering everything from high-tech weapons and equipment to exotic food and drink from across the galaxy.
@@ -36,11 +35,9 @@ Despite its rough-and-tumble reputation, Station Delta is relatively well-organi
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/StationDelta.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
 
-
 For Raven, Station Delta is a crucial waypoint on her journeys through space. She comes here to take on new contracts, refuel her ship the ShadowRunner, and stock up on supplies and information. She has a number of trusted contacts on the station, including a fixer who helps her find work and a weapons dealer who provides her with the latest gear and technology.
 
 Despite the risks and uncertainties of life on Station Delta, Raven feels at home here. The station may be a den of thieves and smugglers, but it&#39;s also a place where she can be herself and make a living doing what she loves. And as long as she can stay one step ahead of the law and her enemies, she&#39;ll keep coming back to Station Delta for years to come.
-
 
 &lt;div id=&quot;inventory-display&quot;&gt;
 &lt;strong&gt;Inventory:&lt;/strong&gt;
@@ -56,19 +53,10 @@ Despite the risks and uncertainties of life on Station Delta, Raven feels at hom
 [[Ship Repairs-&gt;Ship Repairs]] 
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Raven" tags="" position="100,25" size="100,100">In a distant future, humanity has colonized many planets and star systems. Among the settlers are a group of rogue traders known as deep space smugglers.
-
-(set:$Fuel to 1000)(set:$Gold to 10000)(set:$Phaser to 1000) (set:$Map to false)(set:$Health to 1000)(set:$ShipStatus to 1000)
+</tw-passagedata><tw-passagedata pid="2" name="Raven" tags="" position="100,25" size="100,100">(set:$Fuel to 1000)(set:$Gold to 10000)(set:$Phaser to 1000) (set:$Map to false)(set:$Health to 1000)(set:$ShipStatus to 1000)
 
 (set:$inventory to (a:))
-
-
-&lt;div id=&quot;inventory-display&quot;&gt;
-&lt;strong&gt;Inventory:&lt;/strong&gt;
-&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
-&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
-&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
-&lt;/div&gt;
+In a distant future, humanity has colonized many planets and star systems. Among the settlers are a group of rogue traders known as deep space smugglers.
 
 Meet Raven,  a charismatic and cunning deep space smuggler. Born on a rough-and-tumble space station, Raven learned how to survive and thrive in the cutthroat world of interstellar smuggling. 
 
@@ -76,6 +64,12 @@ With a fast ship, the Shadowrunner, and an even quicker wit, Raven takes on dang
 
 She is always on the lookout for her next big score, and her adventurous spirit leads her on a journey filled with excitement, betrayal, and unexpected allies.
 
+&lt;div id=&quot;inventory-display&quot;&gt;
+&lt;strong&gt;Inventory:&lt;/strong&gt;
+&lt;b style=&quot;color:silver;&quot;&gt;Fuel=$Fuel&lt;/b&gt; • &lt;b style=&quot;color:yellow;&quot;&gt;Gold=$Gold&lt;/b&gt; • &lt;b style=&quot;color:red;&quot;&gt;Phaser=$Phaser&lt;/b&gt;
+&lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
+&lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
+&lt;/div&gt;
 
 [[Visit the Station Delta-&gt;Station Delta]]
 
@@ -100,7 +94,6 @@ Various job offers are posted on the intergalactic network. Some are legal, some
 </tw-passagedata><tw-passagedata pid="4" name="Ship Systems" tags="" position="425,250" size="100,100">
 (if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
-
 You take a moment to review the Shadowrunner&#39;s systems. Everything seems in order, but extra fuel or upgrades could always come in handy.
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/ShipStatus.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
@@ -114,10 +107,11 @@ You take a moment to review the Shadowrunner&#39;s systems. Everything seems in 
 
 [[Buy Fuel-&gt;Fuel Depot]]
 [[Upgrade Weapons-&gt;Weapons Dealer]]
-[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="950,75" size="100,100">
-(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
+[[Return to the Shadowrunner-&gt;The Shadowrunner]]</tw-passagedata><tw-passagedata pid="5" name="Local Tavern" tags="" position="950,75" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/LocalTavern.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
+
+The tavern is bustling with activity. You overhear whispers of a lucrative, but dangerous, smuggling opportunity.
 
 &lt;div id=&quot;inventory-display&quot;&gt;
 &lt;strong&gt;Inventory:&lt;/strong&gt;
@@ -125,9 +119,6 @@ You take a moment to review the Shadowrunner&#39;s systems. Everything seems in 
 &lt;b style=&quot;color:orange;&quot;&gt;Map: (if: $Map)[Yes](else:)[No]&lt;/b&gt;
 &lt;b style=&quot;color:green;&quot;&gt;Health=$Health&lt;/b&gt; • &lt;b style=&quot;color:blue;&quot;&gt;ShadowRunner=$ShipStatus&lt;/b&gt;
 &lt;/div&gt;
-
-
-The tavern is bustling with activity. You overhear whispers of a lucrative, but dangerous, smuggling opportunity.
 
 [[Enjoy a Drink-&gt;Enjoy a Drink]]
 [[Return to Ship Systems-&gt;Ship Systems]]
@@ -183,12 +174,11 @@ You decide to upgrade your weapons. It costs &lt;b style=&quot;color:yellow;&quo
 (set: $Phaser to $Phaser + 500)
 (set: $Gold to $Gold - 500)
 
-[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="700,275" size="100,100">
-(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
-
-The tavern is filled with a mix of smugglers, traders, and other spacefarers. As you settle in with a drink, you overhear various conversations. There could be opportunities here.
+[[Return to Ship Systems-&gt;Ship Systems]]</tw-passagedata><tw-passagedata pid="9" name="Enjoy a Drink" tags="" position="700,275" size="100,100">(if: $Health &lt;= 100 or $ShipStatus &lt;= 100)[(goto: &quot;End Game&quot;)]
 
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/EnjoyADrink.png&quot; alt=&quot;Station Delta&quot; width=&quot;500&quot; height=&quot;700&quot;&gt;
+
+The tavern is filled with a mix of smugglers, traders, and other spacefarers. As you settle in with a drink, you overhear various conversations. There could be opportunities here.
 
 &lt;div id=&quot;inventory-display&quot;&gt;
 &lt;strong&gt;Inventory:&lt;/strong&gt;
@@ -208,7 +198,6 @@ Raven&#39;s ship is a sleek, black and silver vessel called the ShadowRunner. It
 &lt;img src=&quot;https://bshaw420.github.io/Shadowrunner.github.io/ShadowRunner.png&quot; alt=&quot;Shadowrunner, Ravens spaceship&quot; width=&quot;700&quot; height=&quot;500&quot;&gt;
 
 The cockpit is Raven&#39;s domain, featuring the latest navigation and defensive systems. It&#39;s also equipped with a state-of-the-art artificial intelligence system, providing Raven with a reliable co-pilot and advisor. The rest of the ship includes a small armory, sleeping quarters for the crew, and a lounge area. The ShadowRunner is not just a means of transportation for Raven, but a symbol of her success and a reflection of her style. 
-
 
 &lt;div id=&quot;inventory-display&quot;&gt;
 &lt;strong&gt;Inventory:&lt;/strong&gt;
